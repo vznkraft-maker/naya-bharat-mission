@@ -11,3 +11,56 @@ body{margin:0;font-family:Poppins,Arial,sans-serif;background:var(--light);color
 .hero{position:relative;height:520px;color:#13699b;display:flex;align-items:center}
 .overlay{position:absolute;inset:0;background:linear-gradient(90deg, rgba(0,74,124,0.65), rgba(31,163,209,0.35));}
 .content{position:relative;z-index:2;padding:48px;max-width:700px}
+/* ------ MOBILE RESPONSIVE FIX ------ */
+@media(max-width: 768px) {
+
+  header .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header .header .brand {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  /* Buttons in header */
+  header .btn {
+    padding: 8px 14px;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+
+  /* Hero Section */
+  .hero {
+    background-position: center !important;
+  }
+
+  .hero .content {
+    padding: 30px 20px !important;
+    max-width: 100% !important;
+  }
+
+  .hero h1 {
+    font-size: 24px !important;
+    line-height: 1.4 !important;
+  }
+
+  .hero p,
+  .hero .leader {
+    font-size: 16px !important;
+  }
+
+  /* Buttons inside hero */
+  .hero .btn {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .hero .btn-outline {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+}
